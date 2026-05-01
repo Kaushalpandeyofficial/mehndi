@@ -119,6 +119,38 @@
             letter-spacing: 1px;
         }
 
+        .purchase-section {
+            margin: 30px 0;
+            background: #151515;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .purchase-section p {
+            color: #ccc;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .purchase-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745, #218838);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            transition: 0.3s;
+        }
+
+        .purchase-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+        }
+
         @media (max-width: 480px) {
             h1 {
                 font-size: 24px;
@@ -131,6 +163,11 @@
 
             .assist-text {
                 font-size: 14px;
+            }
+            
+            .purchase-btn {
+                font-size: 16px;
+                padding: 12px 20px;
             }
         }
     </style>
@@ -153,6 +190,13 @@
 
         <div class="urgent-notice">
             ⚠️ Kindly pay the pending amount immediately. Otherwise, this site will be dismantled or sold to a third-party hoster for cost recovery.
+        </div>
+
+        <div class="purchase-section">
+            <p>Interested in purchasing this website with host & domain access?</p>
+            <a href="tel:9696151329" class="purchase-btn">
+                📞 Contact Us: 96961 51329
+            </a>
         </div>
 
         <div class="footer">
