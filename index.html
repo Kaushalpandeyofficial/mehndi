@@ -76,6 +76,23 @@
             font-weight: 600;
         }
 
+        .urgent-notice {
+            background: #220000;
+            border: 1px solid #ff4b4b;
+            color: #ff6666;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin: 25px 0;
+            line-height: 1.5;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { border-color: #ff4b4b; }
+            50% { border-color: #ff0000; }
+        }
+
         .footer {
             border-top: 1px solid #2a2a2a;
             padding-top: 30px;
@@ -130,9 +147,13 @@
             This website has been temporarily suspended from the developer's end due to <strong>incomplete payment</strong> for development services. Once the pending amount is cleared, the website will be restored immediately.
         </div>
 
-        <p class="assist-text">
+            <p class="assist-text">
             For further assistance or to resolve this, please contact the <span>development team</span>.
         </p>
+
+        <div class="urgent-notice">
+            ⚠️ Kindly pay the pending amount immediately. Otherwise, this site will be dismantled or sold to a third-party hoster for cost recovery.
+        </div>
 
         <div class="footer">
             <img src="assets/images/lkol.png" alt="Developer Logo" class="developer-img">
